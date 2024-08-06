@@ -1,0 +1,16 @@
+<!-- produtos/templates/produtos/product_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Product List:</h1>
+    <ul style="list-style: none;">
+        {% for product in products %}
+            <li><b>Produto:</b> {{ product.nome }} <br> <b>Descrição:</b>  {{ product.descricao }}  <br> <b>Preço:</b> ${{ product.preco }}</li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
